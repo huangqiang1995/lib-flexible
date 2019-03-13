@@ -1,29 +1,57 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <div class='box1'></div>
+    <div class='box2'></div>
+    <div class='box3'></div>
+    <div class='box4'></div>
+    <div class='box5'></div>
+    <div class='box6'></div>
+    <p>字体适配测试</p>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+p{
+  font-size:30px;/*px*/
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+*{margin:0;padding:0}
+  #app{
+    width:100%;
+    div{
+      height:100px;
     }
   }
-}
+  .box1{
+    width:75px;
+    background:red;
+  }
+  .box2{
+    width:200px;
+    background:darkblue;
+  }
+  .box3{
+    width:300px;
+    background:yellowgreen;
+  }
+  .box4{
+    width:500px;
+    background:slategrey;
+  }
+  .box5{
+    width:650px;
+    background:green;
+  }
+  .box6{
+    width:750px;
+    background:skyblue;
+  }
+  .clear{
+    zoom: 1;
+  }
+  .clear:after{
+    display: block;
+    clear:both;
+    content:'';
+    visibility: hidden;
+    height:1; }
 </style>
