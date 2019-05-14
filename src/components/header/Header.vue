@@ -1,12 +1,17 @@
 <template>
     <div>
         lib-flexible-demo  
+        <button style='height:50px;width:100px;font-size:20px;' @click='go'>返回</button>
     </div>
 </template>
 
 <script>
 export default {
-
+    methods:{
+        go(){
+            this.$router.go(-1);
+        }
+    }
 }
 </script>
 
