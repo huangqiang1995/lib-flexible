@@ -1,7 +1,7 @@
 <template>
     <div class='footer'>
         <ul class="list">
-            <li v-for='item in demoList' :class="item.isShow?'active':''" @click="toPage(item.props)">{{item.name}}</li>
+            <li v-for='(item,index) in demoList' :key="index" :class="item.isShow?'active':''" @click="toPage(item.props)">{{item.name}}</li>
         </ul>
     </div>
 </template>
